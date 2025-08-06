@@ -75,11 +75,11 @@ The dataset includes the following features for each individual:
 
 ### Test Set Performance
 
-| Model                   | R²       | RMSE      | MAE      |
-|------------------------|----------|-----------|----------|
-| Linear Regression       | `[r2_linear:.4f]`  | `[rmse_linear:.2f]` | `[mae_linear:.2f]` |
-| Gradient Boosting       | `[r2_gbr:.4f]`     | `[rmse_gbr:.2f]`    | `[mae_gbr:.2f]`    |
-| Random Forest           | `[r2_rf:.4f]`      | `[rmse_rf:.2f]`     | `[mae_rf:.2f]`     |
+| Model                   | R²        | RMSE      
+|------------------------|------------|-----------|
+| Linear Regression       | `0.7542`  | `5931.56`|
+| Gradient Boosting       | `0.9896`  | `1156.68`|
+| Random Forest           | `0.9792,` | `1572.34`|
 
 - **Gradient Boosting** and **Random Forest** outperformed Linear Regression significantly.
 - **Actual vs Predicted** plots show that tree-based models captured higher expense values better.
@@ -91,23 +91,17 @@ The dataset includes the following features for each individual:
 
 ### Linear Regression
 
-- R² Mean = `[cv_scores_linear_r2.mean():.4f]`, Std = `[cv_scores_linear_r2.std():.4f]`
-- RMSE Mean = `[np.sqrt(-cv_scores_linear_mse).mean():.2f]`, Std = `[np.sqrt(-cv_scores_linear_mse).std():.2f]`
+- R² Mean = `0.7542`, Std = `0.0213`
+- RMSE Mean = `5931.56`, Std = `246.57`
 
 ### Gradient Boosting Regressor
 
-- R² Mean = `[cv_scores_gbr_r2.mean():.4f]`, Std = `[cv_scores_gbr_r2.std():.4f]`
-- RMSE Mean = `[np.sqrt(-cv_scores_gbr_mse).mean():.2f]`, Std = `[np.sqrt(-cv_scores_gbr_mse).std():.2f]`
+- R² Mean = `0.9896`, Std = `0.0061`
+- RMSE Mean = `1156.68`, Std = `337.94`
 
 ### Random Forest Regressor
 
-- R² Mean = `[cv_scores_rf_r2.mean():.4f]`, Std = `[cv_scores_rf_r2.std():.4f]`
-- RMSE Mean = `[np.sqrt(-cv_scores_rf_mse).mean():.2f]`, Std = `[np.sqrt(-cv_scores_rf_mse).std():.2f]`
+- R² Mean = `0.9792`, Std = `0.0142`
+- RMSE Mean = `1572.34`, Std = `693.86`
 
----
 
-## 📊 Feature Importance
-
-### Tree-Based Models
-
-- Feature Importance (Gradient Boosting):
