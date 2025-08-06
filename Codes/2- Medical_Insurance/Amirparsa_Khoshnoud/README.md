@@ -38,7 +38,7 @@ Make sure you have Python 3.8+ installed. Then:
 
 
 # Clone the repo
-git clone https://github.com/your-username/your-repo-name.git
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/pskh2004/IMT)
 cd your-repo-name
 
 # Create virtual environment (optional but recommended)
