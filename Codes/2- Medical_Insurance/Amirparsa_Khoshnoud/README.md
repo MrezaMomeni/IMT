@@ -39,7 +39,7 @@ Make sure you have Python 3.8+ installed. Then:
 
 # Clone the repo
 git clone https://github.com/pskh2004/IMT
-cd your-repo-name
+
 
 # Create virtual environment (optional but recommended)
 python -m venv venv
