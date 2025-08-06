@@ -1,70 +1,44 @@
-📊 Streamlit-Interactive Data Visualization App
-This project is a Streamlit-based web application that allows users to upload, visualize, and explore datasets interactively. Built entirely in Python using popular data science libraries like pandas, matplotlib, and seaborn, this tool is perfect for quickly getting insights from your data.
+🏥 Medical Insurance Cost Predictor
+A machine learning-powered web app that predicts individual medical insurance expenses based on personal and lifestyle information. This project is built using Python, Streamlit, and Scikit-learn, and provides both data visualization and cost prediction through a simple, interactive interface.
+
+📌 Overview
+This app utilizes a regression model trained on a real-world dataset containing features like:
+
+Age
+
+Sex
+
+BMI (Body Mass Index)
+
+Number of children
+
+Smoking status
+
+Region
+
+The goal is to estimate the insurance charges based on these inputs — a task that's highly relevant in insurance tech, healthcare analytics, and cost forecasting.
 
 🚀 Features
-📁 CSV Upload – Drag-and-drop or browse to upload your dataset.
+📁 Upload Dataset: Accepts CSV files (default sample included)
 
-🧮 Data Summary – Quick look at the structure: column types, missing values, basic stats.
+📊 Data Exploration: Visualize distributions, correlations, and outliers
 
-📈 Interactive Visualizations – Choose columns to plot:
+🧠 Predictive Model: Enter custom input and get instant insurance charge predictions
 
-Line Plot
+📉 Regression Techniques: Includes training and evaluation of models like Linear Regression
 
-Bar Chart
-
-Scatter Plot
-
-Histogram
-
-Heatmap (correlation matrix)
-
-🎛️ Custom Options – Pick your x/y axes, aggregation types, and number of bins.
-
-✨ User-Friendly UI – Powered by Streamlit widgets like selectbox, slider, and checkbox.
 
 🧰 Tech Stack
-Python 🐍
+Python 3.8+
 
-Streamlit 🎈
+Pandas & NumPy
 
-Pandas 🐼
+Matplotlib & Seaborn (for EDA)
 
-Matplotlib 📉
-
-Seaborn 🐚
-
-📦 Installation
-Make sure you have Python 3.8+ installed. Then:
+Scikit-learn (for regression models)
 
 
-# Clone the repo
-git clone https://github.com/pskh2004/IMT
+git clone [My repo](https://github.com/pskh2004/IMT/tree/main/Codes/2-%20Medical_Insurance/Amirparsa_Khoshnoud)
 
 
-# Create virtual environment (optional but recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-# Install dependencies
-pip install -r requirements.txt
-🏃‍♂️ Running the App
- 
-streamlit run your_notebook_script.py
-Or if it's still a .ipynb, you can:
-
-Convert the notebook to Python:
-
-
-jupyter nbconvert --to script Untitled17.ipynb
-Then run it with Streamlit:
-
-
-streamlit run Untitled17.py
-📁 File Structure
-
-├── Untitled17.ipynb         # Main notebook (app logic)
-├── README.md                # This file
-├── requirements.txt         # Python dependencies
-🧪 Example Dataset
-You can test the app with any CSV file, or use a built-in dataset by converting it to CSV (e.g., Iris or Titanic from seaborn).
 
