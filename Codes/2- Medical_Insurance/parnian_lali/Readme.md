@@ -6,7 +6,7 @@ A machine-learning project that predicts individual medical insurance expenses u
 
 ## Overview
 
-Medical costs have been rising globally, making insurance planning more critical than ever. This project uses regression algorithms to estimate individual insurance expenses based on personal attributes such as age, gender, BMI, region, and lifestyle factors.
+Medical costs have been rising globally, making insurance planning more critical than ever. This project uses regression algorithms to estimate individual insurance expenses based on personal attributes such as age, gender, BMI, region and lifestyle factors.
 
 ---
 
@@ -19,7 +19,7 @@ The `medical_insurance.csv` dataset contains simulated records with the followin
 - **bmi**: Float, body mass index  
 - **children**: Integer, number of dependent children  
 
-- **region**: Categorical region (northeast, northwest, southeast, southwest)  
+- **region**: Categorical region (northeast, northwest, southeast, southwest).  
 - **discount_eligibility**: Categorical, yes or no
 **premium**: Float
 
@@ -40,7 +40,7 @@ The `medical_insurance.csv` dataset contains simulated records with the followin
 4. **Hyperparameter Tuning**  
    - Compare default vs. tuned models using grid search  
 5. **Evaluation**  
-   - Metrics: RMSE, MAE, R², MSE  
+   - Metrics: RMSE, MAE, R², MSE  .
  
 
 ---
