@@ -1,0 +1,32 @@
+# configs/hyperparams.yaml
+# Hyperparameters and pipeline settings for the project
+# Edit values here (batch_size, lr, image size, paths, callbacks, etc.)
+
+# Example hyperparameters
+image:
+  Data_size: 9,416 samples (Normal: 4,414; Stone: 5,002)
+  Resolution: 512x512 pixels
+  channels: 3
+
+training:
+  height: 96
+  width: 96
+  batch_size: 32
+  epochs: 30
+  learning_rate: 1e-3
+  optimizer: "adam"
+
+callbacks:
+  reduce_lr:
+    monitor: "val_loss"
+    factor: 0.5
+    patience: 2
+    min_lr: 1e-6
+  early_stopping:
+    monitor: "val_loss"
+    patience: 3
+    restore_best_weights: true
+
+dataset:
+  img_dir: "../data/images"
+  csv_labels: "../data/labels.csv"
