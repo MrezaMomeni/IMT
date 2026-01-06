@@ -1,3 +1,4 @@
+<!-- trunk-ignore-all(prettier) -->
 # 🏥 Medical Insurance Cost & Premium Prediction
 
 **Project Code:** #3
